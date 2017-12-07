@@ -30,7 +30,7 @@ public class Lines {
     }
 
     public String longestLinetoString() {
-        return "The longest line is "+ longestLine().toString();
+        return "The longest line is "+ longestLine();
     }
 
     public String lengthString(){
