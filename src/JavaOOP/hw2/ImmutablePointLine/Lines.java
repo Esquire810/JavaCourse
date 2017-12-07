@@ -3,7 +3,7 @@ package JavaOOP.hw2.ImmutablePointLine;
 import java.util.ArrayList;
 
 public class Lines {
-    ArrayList<Line> lines = new ArrayList<Line>();
+    private ArrayList<Line> lines = new ArrayList<Line>();
 
     public void add(Line line){
         lines.add(line);
