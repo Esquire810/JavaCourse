@@ -10,5 +10,11 @@ public class FilmRunner {
         films.add(furious);
 
         films.getFilms();
+        System.out.println();
+        films.genreFilter(Genre.FANTASY);
+        System.out.println();
+        films.dataFilter(2011,2020);
+        System.out.println();
+        films.actorFilter(Actor.VIN_DIESEL);
     }
 }

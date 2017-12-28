@@ -15,4 +15,23 @@ public class Films {
             System.out.println("film = " + film);
         }
     }
+
+    public void genreFilter(Genre genre){
+        films.stream()
+                .filter(film->film.getGenre().equals(genre))
+                .forEach(film-> System.out.println(film.toString()));
+    }
+
+    public void dataFilter(int firstDate, int lastDate){
+        films.stream()
+                .filter(film -> firstDate<film.getDate())
+                .filter(film -> film.getDate()<lastDate)
+                .forEach(film -> System.out.println(film.toString()));
+    }
+
+    public void actorFilter(Actor actor){
+        films.stream()
+                .filter(film->film.getActor().equals(actor))
+                .forEach(film-> System.out.println(film.toString()));
+    }
 }
